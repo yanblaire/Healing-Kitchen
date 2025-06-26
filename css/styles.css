@@ -7,6 +7,7 @@
     --letter-spacing: 0.1rem;
     --letter-spacing-header: 0.3rem;
     --button-background-color: #38acdb;
+    --text-font: sans-serif
 }
 /*------- End Root Variables -------*/
 
@@ -83,3 +84,12 @@ nav ul li a:hover::after{
   transform-origin: left;
 }
 /*------- End Nav Bar Styling -------*/
+
+/*-------- Contact Page -------------*/
+
+.contact-hero-section{
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+
+/*-------- End Contact Page -------------*/
