@@ -9,12 +9,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header></header>
+    <header role="banner">
+        <div class="logo">
+            <img src="img/common/logo-300x120.png.png" alt="The Healing Kitchen Logo">
+        </div>
+
+    </header>
+    <div class="icon nav-icon-5">
+            <span></span>
+            <span></span>
+            <span></span>
+            <nav aria-label="Main Navigation" class="londrina-solid-light nav-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="mission.html">Mission</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+    
+                </ul>
+            </nav>
+        </div>
     <main>
         <section class="contact-hero-section">
             <div class="contact-page-title">
                 <h2>Contact Us</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quaerat voluptates delectus doloribus labore eveniet ipsum minus vel, accusamus autem?</p>
+                <p>Get in touch with us for orders, questions, or to learn more about our sustainable farming practices and community programs.</p>
             </div>
         </section>
 
@@ -23,50 +44,57 @@
             <div class="contact-info-data">
                 <div class="contact-info-title">
                     <h3>Get in touch</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, quae.</p>
+                    <p>We'd love to hear from you! Whether you're interested in our fresh produce, educational classes, or partnership opportunities, we're here to help.</p>
                 </div>
 
                 <div class="contact-farm-location card project">
                     <h3>Farm Location</h3>
+                    <p>123 Sustainable Farm Road
+                        Green Valley, CA 95123</p>
                 </div>
 
                 <div class="contact-farm-phone card project">
                     <h3>Farm phone</h3>
+                    <p>(555) 123-4567</p>
                 </div>
 
                 <div class="contact-farm-email card project">
                     <h3>Farm email</h3>
+                    <p>info@sustainablefarm.com</p>
                 </div>
 
                 <div class="contact-farm-hours card project">
                     <h3>Farm hours</h3>
+                    <p>Farmer's Market
+                        Saturdays: 9:00 AM - 1:00 PM
+                        June through September</p>
                 </div>
             </div>
     
             <div class="contact-send-message-info">
                 <div class="contact-send-message-title">
                     <h3>Send us a message</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quas!</p>
                 </div>
 
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" placeholder="Your name">
+                <section class="section3-form" aria-label="Images of our community">
+                    <div>
+                        <p>Your Full Name: </p>
+                        <input id="contact-name" placeholder="Name" type="text" required>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="Your email">
+                    <div>
+                        <p>Your Phone Number:</p>
+                        <input id="contact-phone" placeholder="(555) 555 - 5555" type="text" required>
                     </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" name="subject" placeholder="Subject">
+                    <div>
+                        <p>Your Email: </p>
+                        <input id="contact-email" placeholder="Email" type="text" required>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea name="message" rows="5" placeholder="Your message"></textarea>
+                
+                    <div class="contact-buttons"> 
+                        <button onclick="formSubmit()">Submit</button>
                     </div>
-                </form>
+                     
+                </section>
             </div>
         </section>
 
@@ -78,7 +106,12 @@
 
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <img src="img/common/footer-logo-240x96.png" alt="The Helthy Kitchen Logo">
+        <div class="copyright">
+            <p>&copy;Healing Kitchen, LLC. All rights reserved.</p>
+        </div>
+    </footer>
     
 </body>
 </html>

@@ -18,7 +18,6 @@
 body{
     margin: 0;
     background-color: var(--secondary-color);
-    height: 200vh;
 }
 
 header{
@@ -50,6 +49,14 @@ header{
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.work-in-progress{
+  height: 80vh;
+  width: 100vw;
+  color: var(--text-color);
+  padding-top: 30vh;
+  text-align: center;
 }
 
 /*------- Nav Bar Styling -------*/
@@ -139,7 +146,7 @@ nav ul li a:hover::after, .offerings a:hover::after{
   z-index: 5;
 }
 
-.hero-content h1{
+.hero-content h1, .work-in-progress{
   font-size: 4rem;
   text-transform: uppercase;
   text-shadow: 0 0 15px var(--accent-color);
@@ -218,7 +225,7 @@ nav ul li a:hover::after, .offerings a:hover::after{
   border: 1.5px solid #1c7cbb;
   text-align: center;
 }
-.content-bottom h2{
+.content-bottom h2, .set-meals h2, .beverages h2, .desserts h2, .contact-page-title h2{
   font-size: 3rem;
   text-transform: uppercase;
   color: var(--text-color);
@@ -234,7 +241,7 @@ nav ul li a:hover::after, .offerings a:hover::after{
   gap: 1rem;
 }
 
-.our-offerings h3{
+.our-offerings h3, .beverages-content h3{
   text-shadow: 0 0 15px var(--accent-color);
   position: relative;
   display: inline-block;
@@ -264,9 +271,14 @@ nav ul li a:hover::after, .offerings a:hover::after{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    gap: 1rem;
     color: var(--text-color);
     font-family: var(--text-font);
     padding: 1rem;
+}
+
+.contact-info-data{
+  width: 50%;
 }
 
 .contact-hero-section{
@@ -283,7 +295,7 @@ nav ul li a:hover::after, .offerings a:hover::after{
     font-family: var(--text-font);
 }
 
-.card{
+.card, .daily-special, .set-meals{
     display: flex;
     flex-direction: column;
     background-color: var(--primary-color);
@@ -296,7 +308,93 @@ nav ul li a:hover::after, .offerings a:hover::after{
     margin-bottom: 2rem;
 }
 
+.section3-form{
+	border-radius: 20px;
+	width: 100%;
+  height: 100%;
+	background-color: var(--primary-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 1rem;
+	margin-bottom: 1em;
+}
+.section3-form div{
+	width: 100%;
+	display: flex; 
+	color: white;
+	text-align: center;
+	justify-content: space-between;
+}
+input{
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 2rem;
+    border: 1px solid white;
+	width: 50%;
+}
+
 /*-------- End Contact Page -------------*/
+
+/*-------- Menu Page -------------*/
+.daily-special{
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  color: var(--text-color);
+}
+.daily-special img{
+  width: 5rem;
+  height: 5rem;
+}
+.daily-special h3, .beverages-content h3{
+  font-size: 2rem;
+}
+.daily-special-content, .set-meals-content{
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+
+.set-meals{
+  text-align: center;
+}
+#meals-order-first{
+  order: 1;
+}
+#meals-order-last{
+  order: 0;
+}
+
+.beverages, .desserts{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.beverages-content{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  color: var(--text-color);
+}
+.desserts-content{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.desserts-content .card{
+  align-items: center;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--accent-color);
+
+}
+.desserts-content img{
+  width: 50%;
+
+}
+
+/*-------- End Menu Page -------------*/
 
 /*-------- Footer -------------*/
 footer{
@@ -304,6 +402,7 @@ footer{
   justify-content: space-between;
   padding: 1rem 3rem;
   border-top: 1px solid var(--accent-color);
+  bottom: 0;
 }
 footer img{
   width: 5rem;
