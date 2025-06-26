@@ -280,6 +280,9 @@ nav ul li a:hover::after, .offerings a:hover::after{
 .contact-info-data{
   width: 50%;
 }
+.contact-hours{
+  border: 1px solid var(--secondary-color);
+}
 
 .contact-hero-section{
     background-color: var(--primary-color);
