@@ -7,14 +7,14 @@
     --letter-spacing: 0.1rem;
     --letter-spacing-header: 0.3rem;
     --button-background-color: #38acdb;
-  }
-  /*------- End Root Variables -------*/
+}
+/*------- End Root Variables -------*/
 
-  *{
+*{
     box-sizing: border-box;
-  }
+}
 
-  body{
+body{
     margin: 0;
     background-color: var(--secondary-color);
-  }
+}
