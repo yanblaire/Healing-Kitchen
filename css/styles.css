@@ -24,7 +24,8 @@ header{
   top: 0;
   left: 0;
   margin: 0;
-  display: flex;justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 10vh;
   width: 100%;
@@ -44,20 +45,20 @@ header{
 /*------- Nav Bar Styling -------*/
 nav ul{
   display: flex;
-  gap: 5rem;
+  gap: 0.5rem;
   list-style: none;
 }
 
 nav ul li a{
   display: block;
   color: var(--text-color);
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 0.5rem;
   text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 0.2rem;
-  border-radius: 0.2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  border-radius: 0.1rem;
   border: 1px solid var(--primary-color);
   position: relative;
 }
@@ -83,3 +84,34 @@ nav ul li a:hover::after{
   transform-origin: left;
 }
 /*------- End Nav Bar Styling -------*/
+
+/*------- @media screen Section -------*/
+/*------- Mobile Size Section -------*/
+@media screen and (max-width: 480px) {
+  nav ul{
+      gap: 0.5rem;
+      padding-left: 0;
+  }
+  nav ul li a{
+      padding: 0.1rem 0.5rem;
+      font-weight: 400;
+      font-size: 0.8rem;
+      letter-spacing: 0.1rem;
+  }
+}
+/*------- End Mobile Size Section -------*/
+/*------- Tablet Size Section -------*/
+@media screen and (max-width: 768px) {
+  nav ul{
+      gap: 0.3rem;
+      padding-left: 0;
+  }
+  nav ul li a{
+      padding: 0.1rem 0.5rem;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+
+  }
+}
+/*------- End Tablet Size Section -------*/
+/*------- End @media screen Section -------*/
