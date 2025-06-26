@@ -43,6 +43,14 @@ header{
     height: 8rem;
 }
 
+.content-top, .content-bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 /*------- Nav Bar Styling -------*/
 nav ul{
     display: flex;
@@ -50,7 +58,7 @@ nav ul{
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a, .offerings a, .button{
     display: block;
     color: var(--text-color);
     padding: 0.2rem 0.5rem;
@@ -64,7 +72,7 @@ nav ul li a{
     position: relative;
 }
 
-nav ul li a::after{
+nav ul li a::after, .offerings a::after, .button::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -76,15 +84,170 @@ nav ul li a::after{
     transform-origin: right;
     transition: transform 0.3s ease;
 }
-nav ul li a:hover{
+nav ul li a:hover, .offerings a:hover, .button:hover{
     background: var(--button-background-color);
     box-shadow: 0 0 15px var(--accent-color);
 }
-nav ul li a:hover::after{
+nav ul li a:hover::after, .offerings a:hover::after{
     transform: scaleX(1);
     transform-origin: left;
 }
 /*------- End Nav Bar Styling -------*/
+
+/*------- Hero Section -------*/
+.hero-section{
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+  border-bottom: 1px solid var(--accent-color);
+  box-shadow: 0 0 15px var(--accent-color);
+  letter-spacing: var(--letter-spacing-header);
+}
+.hero-backgroun{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.hero-background img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.4) contrast(1.3) saturate(2);
+}
+.hero-content{
+  color: var(--text-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  z-index: 5;
+}
+
+.hero-content h1{
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px var(--accent-color);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.3rem;
+}
+
+.hero-content h1::after, .our-offerings-content h3::after{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+}
+
+.hero-content p{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+/*------- End Hero Section -------*/
+
+/*------- Offerings Section Part 1 -------*/
+
+.offerings{
+  border: 1px solid var(--accent-color);
+  letter-spacing: var(--letter-spacing);
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  gap: 2rem;
+  text-align: center;
+}
+
+.offerings-title{
+  position: relative;
+  width: 100%;
+}
+
+.offerings-title h2{
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: var(--secondary-color);
+  text-shadow: 0 0 10px var(--accent-color);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.offerings img{
+  width: 100%;
+  height: 100%;
+}
+
+/*------- End Offerings Section Part 1-------*/
+/*------- Offerings Section Part 2-------*/
+.content-bottom{
+  margin: 2rem 0;
+  background-color: var(--primary-color);
+  background-image: linear-gradient(#1c7cbb 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #1c7cbb calc(100% - 1.5px)), linear-gradient(90deg, #1c7cbb 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #1c7cbb calc(100% - 1.5px));
+  background-size: 5% 5%;
+  border: 1.5px solid #1c7cbb;
+  text-align: center;
+}
+.content-bottom h2{
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-shadow: 0 0 10px var(--accent-color);
+  padding: 1rem 1rem 0;
+
+
+}
+.our-offerings{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.our-offerings h3{
+  text-shadow: 0 0 15px var(--accent-color);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.3rem;
+
+}
+
+.our-offerings-content{
+  background-color: var(--secondary-color);
+  border: 1px solid var(--accent-color);
+  letter-spacing: var(--letter-spacing);
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+/*------- End Offerings Section Part 2-------*/
 
 /*-------- Contact Page -------------*/
 
@@ -94,6 +257,21 @@ nav ul li a:hover::after{
 }
 
 /*-------- End Contact Page -------------*/
+
+/*-------- Footer -------------*/
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  border-top: 1px solid var(--accent-color);
+}
+footer img{
+  width: 5rem;
+}
+.copyright{
+  color: var(--text-color);
+}
+/*-------- End Footer -------------*/
 
 /*------- @media screen Section -------*/
 /*------- Mobile Size Section -------*/
