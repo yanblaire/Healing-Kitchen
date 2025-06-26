@@ -1,0 +1,15 @@
+/*------- Root Variables -------*/
+:root {
+    --primary-color: #1c7293;
+    --secondary-color: #13293D;
+    --accent-color: #69ddff;
+    --text-color: #fcdebe;
+    --letter-spacing: 0.1rem;
+    --letter-spacing-header: 0.3rem;
+    --button-background-color: #38acdb;
+  }
+  /*------- End Root Variables -------*/
+
+  *{
+    box-sizing: border-box;
+  }
